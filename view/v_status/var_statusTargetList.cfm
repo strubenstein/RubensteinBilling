@@ -1,0 +1,2 @@
+<cfset Variables.statusTargetList_value = "companyID,userID,groupID,productID,invoiceID,invoiceLineItemID,subscriberID,subscriptionID,affiliateID,cobrandID,vendorID">
+<cfset Variables.statusTargetList_label = "Company,User,Group,Product,Invoice,Invoice Line Item,Subscriber,Subscription,Affiliate,Cobrand,Vendor">

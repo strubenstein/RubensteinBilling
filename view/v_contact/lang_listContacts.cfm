@@ -1,0 +1,43 @@
+<cfset Variables.lang_listContacts = StructNew()>
+<cfset Variables.lang_listContacts_title = StructNew()>
+
+<cfset Variables.lang_listContacts.affiliateID = "You did not select a valid affiliate.">
+<cfset Variables.lang_listContacts.cobrandID = "You did not select a valid cobrand.">
+<cfset Variables.lang_listContacts.groupID = "You did not select a valid group.">
+<cfset Variables.lang_listContacts.userID_author = "You did not select a valid user who sent the message.">
+<cfset Variables.lang_listContacts.contactTemplateID = "You did not select a valid contact management template.">
+<cfset Variables.lang_listContacts.contactTopicID = "You did not select a valid contact management topic.">
+<cfset Variables.lang_listContacts.statusID = "You did not select a valid custom status.">
+<cfset Variables.lang_listContacts.contactDateCreated_from = "You did not select a valid &quot;from&quot; date for when the message was created.">
+<cfset Variables.lang_listContacts.contactDateCreated_to = "You did not select a valid &quot;to&quot; date for when the message was created.">
+<cfset Variables.lang_listContacts.contactDateUpdated_from = "You did not select a valid &quot;from&quot; date for when the message was last updated.">
+<cfset Variables.lang_listContacts.contactDateUpdated_to = "You did not select a valid &quot;to&quot; date for when the message was last updated.">
+<cfset Variables.lang_listContacts.contactDateSent_from = "You did not select a valid &quot;from&quot; date for when the message was sent.">
+<cfset Variables.lang_listContacts.contactDateSent_to = "You did not select a valid &quot;to&quot; date for when the message was sent.">
+<cfset Variables.lang_listContacts.contactDateTo = "The &quot;from&quot; date you selected cannot be after the &quot;to&quot; date you selected.">
+<cfset Variables.lang_listContacts.contactByCustomer = "You did not select a valid option for whether the message was sent by the customer.">
+<cfset Variables.lang_listContacts.contactIsSent = "You did not select a valid option for whether the message has been sent.">
+<cfset Variables.lang_listContacts.contactHasCustomID = "You did not select a valid option for whether the message has a custom ID.">
+<cfset Variables.lang_listContacts.contactIsReply = "You did not select a valid option for whether the message is a reply to an earlier message.">
+<cfset Variables.lang_listContacts.contactReplied = "You did not select a valid option for whether the message has been replied to.">
+<cfset Variables.lang_listContacts.contactStatus = "You did not select a valid option for whether the message is currently active / has been resolved.">
+<cfset Variables.lang_listContacts.contactHtml = "You did not select a valid option for whether the message was sent in html format.">
+<cfset Variables.lang_listContacts.contactToMultiple = "You did not select a valid option for whether the message was sent to multiple email addresses.">
+<cfset Variables.lang_listContacts.contactHasCC = "You did not select a valid option for whether the message cc'd anyone.">
+<cfset Variables.lang_listContacts.contactHasBCC = "You did not select a valid option for whether the message bcc'd anyone.">
+<cfset Variables.lang_listContacts.contactEmail = "You did not select a valid option for whether the message was sent via email.">
+<cfset Variables.lang_listContacts.contactFax = "You did not select a valid option for whether the message was sent via fax.">
+<cfset Variables.lang_listContacts.queryDisplayPerPage = "You did not select a valid number of messages to display per page.">
+<cfset Variables.lang_listContacts.queryPage = "You did not select a valid results page number.">
+
+<cfset Variables.lang_listContacts_title.contactFrom = "Sender<br>Company/Name">
+<cfset Variables.lang_listContacts_title.contactSubject = "Subject">
+<cfset Variables.lang_listContacts_title.contactTo = "Recipient<br>Company/Name">
+<cfset Variables.lang_listContacts_title.contactStatus = "Status">
+<cfset Variables.lang_listContacts_title.contactDateSent = "Date<br>Sent">
+<cfset Variables.lang_listContacts_title.viewContact = "Action">
+<cfset Variables.lang_listContacts_title.contactID_custom = "Custom<br>ID">
+
+<cfset Variables.lang_listContacts.errorTitle = "The contact management messages could not be listed for the following reason(s):">
+<cfset Variables.lang_listContacts.errorHeader = "">
+<cfset Variables.lang_listContacts.errorFooter = "">

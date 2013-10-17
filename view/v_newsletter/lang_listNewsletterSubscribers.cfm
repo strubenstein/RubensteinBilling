@@ -1,0 +1,39 @@
+<cfset Variables.lang_listNewsletterSubscribers = StructNew()>
+<cfset Variables.lang_listNewsletterSubscribers_title = StructNew()>
+
+<cfset Variables.lang_listNewsletterSubscribers_title.companyName = "Company<br>Name">
+<cfset Variables.lang_listNewsletterSubscribers_title.lastName = "User<br>Name">
+<cfset Variables.lang_listNewsletterSubscribers_title.email = "Email">
+<cfset Variables.lang_listNewsletterSubscribers_title.status = "Status">
+<cfset Variables.lang_listNewsletterSubscribers_title.html = "HTML">
+<cfset Variables.lang_listNewsletterSubscribers_title.dateSubscribed = "Date<br>Subscribed">
+<cfset Variables.lang_listNewsletterSubscribers_title.updateNewsletterSubscriber = "Manage">
+
+<cfset Variables.lang_listNewsletterSubscribers.affiliateID = "You did not select a valid affiliate.">
+<cfset Variables.lang_listNewsletterSubscribers.cobrandID = "You did not select a valid cobrand.">
+<cfset Variables.lang_listNewsletterSubscribers.groupID = "You did not select a valid group.">
+<cfset Variables.lang_listNewsletterSubscribers.newsletterSubscriberDateTo = "The &quot;from&quot; date you selected cannot be after the &quot;to&quot; date you selected.">
+<cfset Variables.lang_listNewsletterSubscribers.newsletterSubscriberEmail = "You entered characters which are not valid in an email address.">
+<cfset Variables.lang_listNewsletterSubscribers.subscriberIsUser = "You did not select a valid option for whether the subscriber is also a registered user.">
+<cfset Variables.lang_listNewsletterSubscribers.companyIsCustomer = "You did not select a valid option for whether the subscriber is a customer.">
+<cfset Variables.lang_listNewsletterSubscribers.companyIsCobrand = "You did not select a valid option for whether the subscriber is a cobrand partner.">
+<cfset Variables.lang_listNewsletterSubscribers.companyIsVendor = "You did not select a valid option for whether the subscriber is a vendor.">
+<cfset Variables.lang_listNewsletterSubscribers.companyIsAffiliate = "You did not select a valid option for whether the subscriber is an affiliate partner.">
+<cfset Variables.lang_listNewsletterSubscribers.companyIsTaxExempt = "You did not select a valid option for whether the subscriber is tax exempt.">
+<cfset Variables.lang_listNewsletterSubscribers.newsletterSubscriberHtml = "You did not select a valid option for whether the subscriber chose html format instead of text.">
+<cfset Variables.lang_listNewsletterSubscribers.newsletterSubscriberStatus = "You did not select a valid option for whether the subscriber is currently subscribed.">
+<cfset Variables.lang_listNewsletterSubscribers.newsletterSubscriberRegistered = "You did not select a valid option for whether the subscriber registered after subscribing.">
+<cfset Variables.lang_listNewsletterSubscribers.companyHasCustomPricing = "You did not select a valid option for whether the subscriber receives custom pricing.">
+<cfset Variables.lang_listNewsletterSubscribers.companyHasMultipleUsers = "You did not select a valid option for whether the subscriber's company has multiple users.">
+<cfset Variables.lang_listNewsletterSubscribers.userIsSalesperson = "You did not select a valid option for whether the subscriber is a salesperson.">
+<cfset Variables.lang_listNewsletterSubscribers.userIsInMyCompany = "You did not select a valid option for whether the subscriber is a user in your company.">
+<cfset Variables.lang_listNewsletterSubscribers.companyHasCustomID = "You did not select a valid option for whether the subscriber is with a company that has a custom ID.">
+<cfset Variables.lang_listNewsletterSubscribers.userHasCustomID = "You did not select a valid option for whether the subscriber is a user with a custom ID.">
+<cfset Variables.lang_listNewsletterSubscribers.newsletterSubscriberDateType_invoice = "You cannot check more than one option for the purchase date">
+<cfset Variables.lang_listNewsletterSubscribers.queryDisplayPerPage = "You did not select a valid number of messages to display per page.">
+<cfset Variables.lang_listNewsletterSubscribers.queryPage = "You did not select a valid results page number.">
+<cfset Variables.lang_listNewsletterSubscribers.newsletterSubscriberIsExported = "You did not select a valid export status.">
+
+<cfset Variables.lang_listNewsletterSubscribers.errorTitle = "The newsletter subscribers could not be listed for the following reason(s):">
+<cfset Variables.lang_listNewsletterSubscribers.errorHeader = "">
+<cfset Variables.lang_listNewsletterSubscribers.errorFooter = "">

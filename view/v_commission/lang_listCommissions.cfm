@@ -1,0 +1,74 @@
+<cfset Variables.lang_listCommissions = StructNew()>
+<cfset Variables.lang_listCommissions_title = StructNew()>
+
+<cfset Variables.lang_listCommissions.categoryID_sub = "You did not select a valid option for whether to include sub categories.">
+<cfset Variables.lang_listCommissions.commissionDateToFrom = "The end date must be after the begin date.">
+<cfset Variables.lang_listCommissions.commissionPeriodIntervalType = "You did not select a valid option for whether the commission is calculated based on each individual invoice or all invoices from a particular time period.">
+<cfset Variables.lang_listCommissions.commissionPeriodOrInvoiceBased = "You did not select a valid option for whether the commission is calculated based on each individual invoice or all invoices from a time period.">
+<cfset Variables.lang_listCommissions.commissionStageIntervalType = "You did not select a valid commission stage interval type.">
+<cfset Variables.lang_listCommissions.commissionStageInterval_min = "You did not select a valid commission stage interval minimum.">
+<cfset Variables.lang_listCommissions.commissionStageInterval_max = "You did not select a valid commission stage interval minimum.">
+<cfset Variables.lang_listCommissions.commissionStageInterval_minMax = "The commission stage maximum cannot be less than the minimum.">
+<cfset Variables.lang_listCommissions.commissionStageDollarOrPercent = "You did not select a valid option for whether the commission uses dollar or percent.">
+<cfset Variables.lang_listCommissions.commissionStatus = "You did not select a valid commission status.">
+<cfset Variables.lang_listCommissions.commissionAppliedStatus = "You did not select a valid option for whether the commission has been applied.">
+<cfset Variables.lang_listCommissions.commissionAppliesToCategory = "You did not select a valid option for whether the commission applies to a category.">
+<cfset Variables.lang_listCommissions.commissionAppliesToCategoryChildren = "You did not select a valid option for whether the commission applies to category children.">
+<cfset Variables.lang_listCommissions.commissionAppliesToProduct = "You did not select a valid option for whether the commission applies to a product.">
+<cfset Variables.lang_listCommissions.commissionAppliesToProductChildren = "You did not select a valid option for whether the commission applies to product children.">
+<cfset Variables.lang_listCommissions.commissionAppliesToExistingProducts = "You did not select a valid option for whether the commission applies to existing products.">
+<cfset Variables.lang_listCommissions.commissionAppliesToCustomProducts = "You did not select a valid option for whether the commission applies to custom products.">
+<cfset Variables.lang_listCommissions.commissionAppliesToInvoice = "You did not select a valid option for whether the commission applies to an entire invoice.">
+<cfset Variables.lang_listCommissions.commissionTargetsAllUsers = "You did not select a valid option for whether the commission applies to all users.">
+<cfset Variables.lang_listCommissions.commissionTargetsAllGroups = "You did not select a valid option for whether the commission applies to all groups.">
+<cfset Variables.lang_listCommissions.commissionTargetsAllAffiliates = "You did not select a valid option for whether the commission applies to all affiliates.">
+<cfset Variables.lang_listCommissions.commissionTargetsAllCobrands = "You did not select a valid option for whether the commission applies to all cobrands.">
+<cfset Variables.lang_listCommissions.commissionTargetsAllCompanies = "You did not select a valid option for whether the commission applies to all companies.">
+<cfset Variables.lang_listCommissions.commissionTargetsAllVendors = "You did not select a valid option for whether the commission applies to all vendors.">
+<cfset Variables.lang_listCommissions.commissionHasMultipleStages = "You did not select a valid option for whether the commission has multiple stages.">
+<cfset Variables.lang_listCommissions.commissionHasCustomID = "You did not select a valid option for whether the commission has a custom ID.">
+<cfset Variables.lang_listCommissions.commissionBeforeBeginDate = "You did not select a valid option for whether the commission has not yet begun.">
+<cfset Variables.lang_listCommissions.commissionHasEndDate = "You did not select a valid option for whether the commission has an end date.">
+<cfset Variables.lang_listCommissions.commissionStageVolumeDiscount = "You did not select a valid option for whether the commission uses volume calculation.">
+<cfset Variables.lang_listCommissions.commissionStageVolumeDollarOrQuantity = "You did not select a valid option for whether the commission volume calculation is based on dollar or quantity.">
+<cfset Variables.lang_listCommissions.commissionStageVolumeStep = "You did not select a valid option for whether the commission volume calculation uses the step method.">
+<cfset Variables.lang_listCommissions.commissionAppliedToSubscription = "You did not select a valid option for whether the commission has been applied to a subcription.">
+<cfset Variables.lang_listCommissions.commissionIsParent = "You did not select a valid option for whether the commission has child commissions.">
+<cfset Variables.lang_listCommissions.commissionHasGroupTarget = "You did not select a valid option for whether the commission has a group target.">
+<cfset Variables.lang_listCommissions.commissionHasAffiliateTarget = "You did not select a valid option for whether the commission has an affiliate target.">
+<cfset Variables.lang_listCommissions.commissionHasCobrandTarget = "You did not select a valid option for whether the commission has a cobrand target.">
+<cfset Variables.lang_listCommissions.commissionHasCompanyTarget = "You did not select a valid option for whether the commission has a company target.">
+<cfset Variables.lang_listCommissions.commissionHasUserTarget = "You did not select a valid option for whether the commission has a user target.">
+<cfset Variables.lang_listCommissions.commissionHasVendorTarget = "You did not select a valid option for whether the commission has a vendor target.">
+
+<cfset Variables.lang_listCommissions.companyID = "You did not select a valid company target.">
+<cfset Variables.lang_listCommissions.userID = "You did not select a valid user target.">
+<cfset Variables.lang_listCommissions.vendorID = "You did not select a valid product vendor target.">
+<cfset Variables.lang_listCommissions.productID = "You did not select a valid product target.">
+<cfset Variables.lang_listCommissions.categoryID = "You did not select a valid category target.">
+<cfset Variables.lang_listCommissions.groupID = "You did not select a valid group target.">
+<cfset Variables.lang_listCommissions.regionID = "You did not select a valid region target.">
+<cfset Variables.lang_listCommissions.affiliateID = "You did not select a valid affiliate target.">
+<cfset Variables.lang_listCommissions.cobrandID = "You did not select a valid cobrand target.">
+<cfset Variables.lang_listCommissions.commissionID = "You did not select a valid commission.">
+<cfset Variables.lang_listCommissions.commissionID_parent = "You did not select a valid parent commission.">
+<cfset Variables.lang_listCommissions.commissionID_trend = "You did not select a valid primary parent commission.">
+
+<cfset Variables.lang_listCommissions.queryDisplayPerPage = "You did not enter a valid number of commissions to display per page.">
+<cfset Variables.lang_listCommissions.queryPage = "You did not enter a valid page number.">
+
+<cfset Variables.lang_listCommissions_title.commissionID_custom = "Custom<br>ID">
+<cfset Variables.lang_listCommissions_title.commissionName = "Name">
+<cfset Variables.lang_listCommissions_title.commissionPeriodIntervalType = "Calc. Basis/<br>Commission<br>">
+<cfset Variables.lang_listCommissions_title.commissionDateBegin = "Date<br>Begin">
+<cfset Variables.lang_listCommissions_title.commissionDateEnd = "Date<br>End">
+<cfset Variables.lang_listCommissions_title.commissionStatus = "Status">
+<cfset Variables.lang_listCommissions_title.commissionAppliedStatus = "Been<br>Used">
+<cfset Variables.lang_listCommissions_title.commissionDateCreated = "Date<br>Created">
+<cfset Variables.lang_listCommissions_title.commissionDateUpdated = "Date<br>Inactive">
+<cfset Variables.lang_listCommissions_title.viewCommission = "Manage">
+
+<cfset Variables.lang_listCommissions.errorTitle = "The commissions could not be listed for the following reason(s):">
+<cfset Variables.lang_listCommissions.errorHeader = "">
+<cfset Variables.lang_listCommissions.errorFooter = "">
+

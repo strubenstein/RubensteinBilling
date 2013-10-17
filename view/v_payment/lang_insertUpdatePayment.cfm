@@ -1,0 +1,44 @@
+<cfset Variables.lang_insertUpdatePayment = StructNew()>
+
+<cfset Variables.lang_insertUpdatePayment.formSubmitValue_insertPayment = "Record/Charge Payment">
+<cfset Variables.lang_insertUpdatePayment.formSubmitValue_insertRefund = "Record/Process Refund">
+<cfset Variables.lang_insertUpdatePayment.formSubmitValue_updatePayment = "Update/Charge Payment">
+<cfset Variables.lang_insertUpdatePayment.formSubmitValue_updateRefund = "Update/Process Refund">
+
+<cfset Variables.lang_insertUpdatePayment.paymentStatus = "You did not select a valid status.">
+<cfset Variables.lang_insertUpdatePayment.paymentApproved_valid = "You did not select a valid approval status.">
+<cfset Variables.lang_insertUpdatePayment.paymentApproved_processed = "If the payment/refund is to be processed, the approval status must be Unknown.">
+<cfset Variables.lang_insertUpdatePayment.paymentID_custom_maxlength = "The custom item ID must be <<MAXLENGTH>> characters or less. It currently has <<LEN>> characters.">
+<cfset Variables.lang_insertUpdatePayment.paymentDescription_maxlength = "The description must be <<MAXLENGTH>> characters or less. It currently has <<LEN>> characters.">
+<cfset Variables.lang_insertUpdatePayment.paymentAmount_numeric = "The amount must be a number.">
+<cfset Variables.lang_insertUpdatePayment.paymentAmount_maxlength = "The amount may have only <<MAXLENGTH>> decimal places.">
+<cfset Variables.lang_insertUpdatePayment.paymentAmount_negative = "The amount may not be negative.">
+<cfset Variables.lang_insertUpdatePayment.paymentAmount_processed = "The amount cannot be zero if the payment/refund is to be processed.">
+<cfset Variables.lang_insertUpdatePayment.merchantAccountID_processed = "You must select a merchant account to process this payment.">
+<cfset Variables.lang_insertUpdatePayment.merchantAccountID_exist = "You did not select a valid merchant account.">
+<cfset Variables.lang_insertUpdatePayment.paymentCheckNumber_check = "The check number must be a positive integer (or blank).">
+<cfset Variables.lang_insertUpdatePayment.paymentCheckNumber_cashier = "The cashier check number must be a positive integer (or blank).">
+<cfset Variables.lang_insertUpdatePayment.paymentCheckNumber_certified = "The certified check number must be a positive integer (or blank).">
+<cfset Variables.lang_insertUpdatePayment.paymentMethod_maxlength = "The payment method must be <<MAXLENGTH>> characters or less. It currently has <<LEN>> characters.">
+<cfset Variables.lang_insertUpdatePayment.paymentMethod_creditCard = "You did not select a valid credit card account.">
+<cfset Variables.lang_insertUpdatePayment.paymentMethod_bank = "You did not select a valid bank account.">
+<cfset Variables.lang_insertUpdatePayment.paymentMethod_valid = "To process this payment/refund, you must select a valid credit card or bank account.">
+<cfset Variables.lang_insertUpdatePayment.paymentProcessed_valid = "You did not select a valid option for whether to process this payment/refund.">
+<cfset Variables.lang_insertUpdatePayment.paymentProcessed_merchant = "You did not select a valid merchant account.">
+<cfset Variables.lang_insertUpdatePayment.paymentProcessed_ccBank = "You must select a credit card or bank account if processing this payment/refund.">
+<cfset Variables.lang_insertUpdatePayment.paymentDateScheduled_now = "You cannot schedule a payment/refund to occur before now.<br>To process a payment/refund immediately, select the &quot;Process Payment/Refund Now&quot; option instead.">
+<cfset Variables.lang_insertUpdatePayment.paymentDateScheduled_valid = "You must enter a date when scheduling this payment/refund to be processed.">
+<cfset Variables.lang_insertUpdatePayment.paymentCategoryID_valid = "You did not select a valid payment category.">
+<cfset Variables.lang_insertUpdatePayment.paymentCategoryID_inactive = "You cannot select an inactive payment category.">
+<cfset Variables.lang_insertUpdatePayment.subscriberID = "You did not select a valid subscriber for this company.">
+<cfset Variables.lang_insertUpdatePayment.invoiceLineItemID_noInvoice = "No invoice was specified from which you could select a line item.">
+<cfset Variables.lang_insertUpdatePayment.invoiceLineItemID_valid = "You did not select valid line item for this invoice.">
+<cfset Variables.lang_insertUpdatePayment.subscriptionID_noSubscriber = "No subscriber was specified from which you could select a subscription.">
+<cfset Variables.lang_insertUpdatePayment.subscriptionID_valid = "You did not select valid subscription for this subscriber.">
+
+<cfset Variables.lang_insertUpdatePayment.errorTitle_insertPayment = "The payment could not be recorded for the following reasons(s):">
+<cfset Variables.lang_insertUpdatePayment.errorTitle_insertPaymentRefund = "The refund could not be recorded for the following reasons(s):">
+<cfset Variables.lang_insertUpdatePayment.errorTitle_updatePayment = "The payment could not be updated for the following reasons(s):">
+<cfset Variables.lang_insertUpdatePayment.errorTitle_updatePaymentRefund = "The refund could not be updated for the following reasons(s):">
+<cfset Variables.lang_insertUpdatePayment.errorHeader = "">
+<cfset Variables.lang_insertUpdatePayment.errorFooter = "">

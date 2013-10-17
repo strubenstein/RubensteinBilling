@@ -1,0 +1,49 @@
+<cfset Variables.lang_listCompanies = StructNew()>
+<cfset Variables.lang_listCompanies_title = StructNew()>
+
+<cfset Variables.lang_listCompanies.searchField = "You did not select any company fields to search for the given text.">
+<cfset Variables.lang_listCompanies.companyStatus = "You did not select a valid option for whether the company is active.">
+<cfset Variables.lang_listCompanies.companyIsCustomer = "You did not select a valid option for whether the company is a customer.">
+<cfset Variables.lang_listCompanies.companyHasCustomPricing = "You did not select a valid option for whether the company has any custom pricing.">
+<cfset Variables.lang_listCompanies.companyIsAffiliate = "You did not select a valid option for whether the company is an affiliate.">
+<cfset Variables.lang_listCompanies.companyIsCobrand = "You did not select a valid option for whether the company is a cobrand.">
+<cfset Variables.lang_listCompanies.companyIsVendor = "You did not select a valid option for whether the company is a vendor.">
+<cfset Variables.lang_listCompanies.companyIsTaxExempt = "You did not select a valid option for whether the company is tax-exempt.">
+<cfset Variables.lang_listCompanies.companyHasName = "You did not select a valid option for whether the company name is blank.">
+<cfset Variables.lang_listCompanies.companyHasDBA = "You did not select a valid option for whether the company DBA is blank.">
+<cfset Variables.lang_listCompanies.companyHasURL = "You did not select a valid option for whether the company has a URL.">
+<cfset Variables.lang_listCompanies.companyHasUser = "You did not select a valid option for whether the company has a primary user.">
+<cfset Variables.lang_listCompanies.companyHasMultipleUsers = "You did not select a valid option for whether the company has multiple users.">
+<cfset Variables.lang_listCompanies.companyHasCustomID = "You did not select a valid option for whether the company has a custom ID.">
+<cfset Variables.lang_listCompanies.companyIsActiveSubscriber = "You did not select a valid option for whether the company has any active subscriptions.">
+<cfset Variables.lang_listCompanies.companyPrimary = "You did not select a valid option for whether the company is a primary company.">
+<cfset Variables.lang_listCompanies.groupID = "You did not select a valid group.">
+<cfset Variables.lang_listCompanies.affiliateID = "You did not select a valid affiliate.">
+<cfset Variables.lang_listCompanies.cobrandID = "You did not select a valid cobrand.">
+<cfset Variables.lang_listCompanies.statusID = "You did not select a valid custom status.">
+<cfset Variables.lang_listCompanies.queryDisplayPerPage = "You did not enter a valid number of companies to display per page.">
+<cfset Variables.lang_listCompanies.queryPage = "You did not enter a valid page number.">
+<cfset Variables.lang_listCompanies.queryFirstLetter = "You did not enter a valid first letter to jump to.">
+<cfset Variables.lang_listCompanies.companyIsExported = "You did not select a valid export status.">
+
+<cfset Variables.lang_listCompanies_title.companyID_custom = "Custom<br>ID">
+<cfset Variables.lang_listCompanies_title.companyName = "Company Name">
+<cfset Variables.lang_listCompanies_title.lastName = "Primary User">
+<cfset Variables.lang_listCompanies_title.companyStatus = "Status">
+<cfset Variables.lang_listCompanies_title.affiliateCobrandName = "Aff/Cob<br>Partner">
+<cfset Variables.lang_listCompanies_title.companyType = "Company<br>Type">
+<cfset Variables.lang_listCompanies_title.companyDateCreated = "Date<br>Created">
+<cfset Variables.lang_listCompanies_title.viewCompany = "Manage">
+<cfset Variables.lang_listCompanies_title.deleteGroupCompany = "DROP FROM<br>GROUP">
+<cfset Variables.lang_listCompanies_title.insertGroupCompany = "ADD TO<br>GROUP">
+<cfset Variables.lang_listCompanies_title.submitGroupCompanyInsert = "Add Companies To Group">
+<cfset Variables.lang_listCompanies_title.submitGroupCompanyDelete = "Remove Companies From Group">
+<cfset Variables.lang_listCompanies_title.companyPriceTarget = "PRICE<br>TARGET?">
+<cfset Variables.lang_listCompanies_title.submitPriceTargetCompany = "Add Companies As Price Targets">
+<cfset Variables.lang_listCompanies_title.companyCommissionTarget = "COMMISSION<br>TARGET?">
+<cfset Variables.lang_listCompanies_title.submitCommissionTarget = "Add Companies As Commission Targets">
+
+<cfset Variables.lang_listCompanies.errorTitle = "The companies could not be listed for the following reason(s):">
+<cfset Variables.lang_listCompanies.errorHeader = "">
+<cfset Variables.lang_listCompanies.errorFooter = "">
+

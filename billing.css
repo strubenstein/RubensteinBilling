@@ -1,0 +1,39 @@
+/* CSS Document */
+
+.plainlink  {color: blue; text-decoration: none}
+.bluelink  {color: blue}
+.blacklink  {color: black}
+A:hover {text-decoration: underline}
+
+.PageTitle {font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-style: normal; line-height: normal; font-weight: bold; color: #2343F6; padding: 1px 0px 1px 0px;}
+.SubTitle {font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; line-height: normal; font-weight: bold; color: black;}
+.TableHeader {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; line-height: normal; font-weight: bold; background-color: dddddd; color: black;}
+.TableText {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; line-height: normal; font-weight: normal; color: black}
+.MainText {font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; line-height: normal; font-weight: normal; color: black}
+.Instructions {font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; line-height: normal; font-weight: normal; color: black; width: 600; padding: 0px 0px 0px 25px;}
+.SmallText {font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: normal; font-weight: normal; color: black}
+.SubNav {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; line-height: normal; font-weight: normal; background-color: #784397; width: 800px; padding: 2px 2px 2px 2px; border-right: 0px solid #778899; border-bottom: 1px solid #778899; border-left: 0px solid #006699; color: yellow}
+.SubNavLink { color: white; text-decoration: none }
+.SubNavLinkOn { color: white; text-decoration: none; font-weight: bold }
+.SubNavObject { color: yellow; font-size: 13px; font-weight: bold; font-style: italic }
+.SubNavName { color: white; font-weight: bold }
+.SubNavTitle {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-style: normal; line-height: normal; font-weight: bold; color: yellow;}
+.SearchSelect {width: 225px; font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+.ConfirmationMessage {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-style: normal; line-height: normal; font-weight: bold; color: green}
+.ErrorMessage {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-style: normal; line-height: normal; font-weight: bold; color: red}
+.NavSelectOn {background-color: #784397; color: yellow}
+.SelectedTab {background-color: #784397; color: yellow; font-weight: none; font-size: 9pt; font-family: Arial, Helvetica, sans-serif; font-variant: small-caps; text-decoration: none}
+A.SelectedTab:hover {color: yellow; text-decoration: underline}
+.NormalTab {background-color: #E7D8F3; color: #000000; font-weight: lighter; font-size: 10pt; font-family: Arial, Helvetica, sans-serif; font-variant: small-caps; text-decoration: none}
+A.NormalTab:hover {color: #000000; text-decoration: underline}
+
+.menuBar {POSITION: relative; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left}
+.Bar {BORDER-RIGHT: blue 0px outset; BORDER-TOP: blue 0px outset; FLOAT: left; BORDER-LEFT: blue 0px outset; WIDTH: 100px; CURSOR: hand; TEXT-INDENT: 0px; BORDER-BOTTOM: blue 0px outset; POSITION: relative; BACKGROUND-COLOR: white; TEXT-ALIGN: center}
+.menu {BORDER-RIGHT: buttonhighlight thin outset; BORDER-TOP: buttonhighlight thin outset; VISIBILITY: hidden; BORDER-LEFT: buttonhighlight thin outset; WIDTH: 250px; LINE-HEIGHT: 140%; BORDER-BOTTOM: buttonhighlight thin outset; POSITION: absolute; BACKGROUND-COLOR: #ccccff}
+.menuItem {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; WIDTH: 100%; CURSOR: hand; LINE-HEIGHT: 20px; BORDER-BOTTOM: black 1px solid}
+.ItemMouseOver {PADDING-RIGHT: 15px; PADDING-LEFT: 10px; WIDTH: 100%; CURSOR: hand; COLOR: highlighttext; LINE-HEIGHT: 20px; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: highlight}
+.ItemMouseOut {WIDTH: 100%}
+.Arrow {FLOAT: right; FONT-FAMILY: Webdings; POSITION: absolute; TEXT-ALIGN: left}
+.barOver {BORDER-RIGHT: black 0px ridge; BORDER-TOP: black 0px ridge; FLOAT: left; BORDER-LEFT: black 0px ridge; WIDTH: 100px; CURSOR: hand; TEXT-INDENT: 0px; BORDER-BOTTOM: black 0px ridge; POSITION: relative; BACKGROUND-COLOR: white; TEXT-ALIGN: center}
+
+

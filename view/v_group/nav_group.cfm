@@ -1,0 +1,41 @@
+<cfoutput>
+<div class="SubNav">
+<span class="SubNavTitle">Groups: </span>
+<cfif Application.fn_IsUserAuthorized("listGroups")><a href="index.cfm?method=group.listGroups" title="List existing groups" class="SubNavLink<cfif Variables.doAction is "listGroups">On</cfif>">List Existing Groups</a></cfif>
+<cfif Application.fn_IsUserAuthorized("insertGroup")> | <a href="index.cfm?method=group.insertGroup" title="Create new group" class="SubNavLink<cfif Variables.doAction is "insertGroup">On</cfif>">Create New Group</a></cfif>
+<cfif URL.groupID is not 0 and Variables.doAction is not "listGroups">
+	<br><img src="#Application.billingUrlRoot#/images/grayline.jpg" width="100%" height="1" vspace="3" alt="" border="0"><br>
+	<span class="SubNavObject">Group:</span> <span class="SubNavName">#qry_selectGroup.groupName#<cfif qry_selectGroup.groupID_custom is not ""> (#qry_selectGroup.groupID_custom#)</cfif></span><br>
+	<cfif Application.fn_IsUserAuthorized("viewGroup")><a href="index.cfm?method=group.viewGroup&groupID=#URL.groupID#" title="View summary information for group" class="SubNavLink<cfif Variables.doAction is "viewGroup">On</cfif>">Summary</a></cfif>
+	<cfif Application.fn_IsUserAuthorized("updateGroup")> | <a href="index.cfm?method=group.updateGroup&groupID=#URL.groupID#" title="Update group information" class="SubNavLink<cfif Variables.doAction is "updateGroup">On</cfif>">Update</a></cfif>
+	<cfif Application.fn_IsUserAuthorized("insertPermissionTarget")> | <a href="index.cfm?method=group.insertPermissionTarget&groupID=#URL.groupID#" title="Manage and view permissions for members of this group" class="SubNavLink<cfif Find("Permission", Variables.doAction)>On</cfif>">Permissions</a>
+	  <cfelseif Application.fn_IsUserAuthorized("viewPermissionTarget")> | <a href="index.cfm?method=group.viewPermissionTarget&groupID=#URL.groupID#" title="View permissions for members of this group" class="SubNavLink<cfif Find("Permission", Variables.doAction)>On</cfif>">Permissions</a></cfif>
+	<cfif Application.fn_IsUserAuthorized("listPrices")> | <a href="index.cfm?method=group.listPrices&groupID=#URL.groupID#" title="List custom prices that apply to members of this group" class="SubNavLink<cfif Find("Price", Variables.doAction)>On</cfif>">Custom Pricing</a></cfif>
+	<cfif Application.fn_IsUserAuthorized("viewGroup") and (Application.fn_IsUserAuthorized("viewCustomFieldValuesAll") or Application.fn_IsUserAuthorized("listStatusHistory"))> | <a href="index.cfm?method=group.viewGroup&groupID=#URL.groupID#&viewFieldArchives=True" title="View previous values of group information" class="SubNavLink<cfif Variables.doAction is "viewGroup" and IsDefined("URL.viewFieldArchives") and URL.viewFieldArchives is True>On</cfif>">Archived Values</a></cfif>
+	<cfif Application.fn_IsUserAuthorized("listCommissions")> | <a href="index.cfm?method=group.listCommissions&groupID=#URL.groupID#" title="View sales commission plans which apply to members of this group" class="SubNavLink<cfif Variables.doAction is "listCommissions">On</cfif>">Commission Plans</a></cfif>
+	<cfif Application.fn_IsUserAuthorized("insertNote")> | <a href="index.cfm?method=group.insertNote&groupID=#URL.groupID#" title="Create and view notes associated with this group" class="SubNavLink<cfif Find("Note", Variables.doAction)>On</cfif>">Notes</a>
+	  <cfelseif Application.fn_IsUserAuthorized("listNotes")> | <a href="index.cfm?method=group.listNotes&groupID=#URL.groupID#" title="View notes associated with this group" class="SubNavLink<cfif Find("Note", Variables.doAction)>On</cfif>">Notes</a></cfif>
+	<cfif Application.fn_IsUserAuthorized("insertTask")> | <a href="index.cfm?method=group.insertTask&groupID=#URL.groupID#" title="Create and view tasks associated with this group" class="SubNavLink<cfif Find("Task", Variables.doAction)>On</cfif>">Tasks</a>
+	  <cfelseif Application.fn_IsUserAuthorized("listTasks")> | <a href="index.cfm?method=group.listTasks&groupID=#URL.groupID#" title="View tasks associated with this group" class="SubNavLink<cfif Find("Task", Variables.doAction)>On</cfif>">Tasks</a></cfif>
+	<cfif Application.fn_IsUserAuthorized("insertPayflowGroup")> | <a href="index.cfm?method=group.insertPayflowGroup&groupID=#URL.groupID#" title="Determine the subscription processing method used to process customers of this group (directly or via affiliate/cobrand)" class="SubNavLink<cfif Find("Payflow", Variables.doAction)>On</cfif>">Subscription Processing</a>
+	  <cfelseif Application.fn_IsUserAuthorized("viewPayflowGroup")> | <a href="index.cfm?method=group.viewPayflowGroup&groupID=#URL.groupID#" title="View the subscription processing method used to process customers of this group (directly or via affiliate/cobrand)" class="SubNavLink<cfif Find("Payflow", Variables.doAction)>On</cfif>">Subscription Processing</a></cfif>
+	<cfif Application.fn_IsUserAuthorized("listGroupUser") or Application.fn_IsUserAuthorized("listGroupCompany") or Application.fn_IsUserAuthorized("listGroupAffiliate") or Application.fn_IsUserAuthorized("listGroupCobrand") or Application.fn_IsUserAuthorized("listGroupVendor")>
+		<br><i>List Existing Members</i>: 
+		<cfif Application.fn_IsUserAuthorized("listGroupUser")><a href="index.cfm?method=group.listGroupUser&groupID=#URL.groupID#" title="List existing users that belong to this group" class="SubNavLink<cfif Variables.doAction is "listGroupUser">On</cfif>">Users</a> | </cfif>
+		<cfif Application.fn_IsUserAuthorized("listGroupCompany")><a href="index.cfm?method=group.listGroupCompany&groupID=#URL.groupID#" title="List existing companies that are members of this group" class="SubNavLink<cfif Variables.doAction is "listGroupCompany">On</cfif>">Companies</a> | </cfif>
+		<cfif Application.fn_IsUserAuthorized("listGroupAffiliate")><a href="index.cfm?method=group.listGroupAffiliate&groupID=#URL.groupID#" title="List existing affiliates that are members of this group" class="SubNavLink<cfif Variables.doAction is "listGroupAffiliate">On</cfif>">Affiliates</a> | </cfif>
+		<cfif Application.fn_IsUserAuthorized("listGroupCobrand")><a href="index.cfm?method=group.listGroupCobrand&groupID=#URL.groupID#" title="List existing cobrands that are members of this group" class="SubNavLink<cfif Variables.doAction is "listGroupCobrand">On</cfif>">Cobrands</a> | </cfif>
+		<cfif Application.fn_IsUserAuthorized("listGroupVendor")><a href="index.cfm?method=group.listGroupVendor&groupID=#URL.groupID#" title="List existing vendors that are members of this group" class="SubNavLink<cfif Variables.doAction is "listGroupVendor">On</cfif>">Vendors</a></cfif>
+	</cfif>
+	<cfif Application.fn_IsUserAuthorized("insertGroupUser") or Application.fn_IsUserAuthorized("insertGroupCompany") or Application.fn_IsUserAuthorized("insertGroupAffiliate") or Application.fn_IsUserAuthorized("insertGroupCobrand") or Application.fn_IsUserAuthorized("insertGroupVendor")>
+		<br><i>Add New Members</i>:
+		<cfif Application.fn_IsUserAuthorized("insertGroupUser")><a href="index.cfm?method=group.insertGroupUser&groupID=#URL.groupID#" title="Add user to this group" class="SubNavLink<cfif Variables.doAction is "insertGroupUser">On</cfif>">Users</a> | </cfif>
+		<cfif Application.fn_IsUserAuthorized("insertGroupCompany")><a href="index.cfm?method=group.insertGroupCompany&groupID=#URL.groupID#" title="Add companies to this group" class="SubNavLink<cfif Variables.doAction is "insertGroupCompany">On</cfif>">Companies</a> | </cfif>
+		<cfif Application.fn_IsUserAuthorized("insertGroupAffiliate")><a href="index.cfm?method=group.insertGroupAffiliate&groupID=#URL.groupID#" title="Add affiliates to this group" class="SubNavLink<cfif Variables.doAction is "insertGroupAffiliate">On</cfif>">Affiliates</a> | </cfif>
+		<cfif Application.fn_IsUserAuthorized("insertGroupCobrand")><a href="index.cfm?method=group.insertGroupCobrand&groupID=#URL.groupID#" title="Add cobrands to this group" class="SubNavLink<cfif Variables.doAction is "insertGroupCobrand">On</cfif>">Cobrands</a> | </cfif>
+		<cfif Application.fn_IsUserAuthorized("insertGroupVendor")><a href="index.cfm?method=group.insertGroupVendor&groupID=#URL.groupID#" title="Add vendors to this group" class="SubNavLink<cfif Variables.doAction is "insertGroupVendor">On</cfif>">Vendors</a></cfif>
+	</cfif>
+</cfif>
+</div><br>
+</cfoutput>
+

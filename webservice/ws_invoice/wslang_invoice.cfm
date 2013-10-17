@@ -1,0 +1,24 @@
+<cfset Variables.wslang_invoice = StructNew()>
+
+<cfset Variables.wslang_invoice.invoiceClosed = "This invoice is already closed. New line items cannot be added.">
+<cfset Variables.wslang_invoice.invalidSubscriber = "You did not select a valid subscriber.">
+<cfset Variables.wslang_invoice.invalidCompany = "You did not select a valid company.">
+<cfset Variables.wslang_invoice.invalidUser = "You did not select a valid user.">
+<cfset Variables.wslang_invoice.invalidProduct = "You did not select a valid product.">
+<cfset Variables.wslang_invoice.invalidCustomPrice = "You did not select a valid custom price.">
+<cfset Variables.wslang_invoice.productParameter = "You entered product parameters, but not a valid product.">
+<cfset Variables.wslang_invoice.invalidParameter = "You did not enter valid product parameter.">
+<cfset Variables.wslang_invoice.noParameters = "This product has no parameters.">
+<cfset Variables.wslang_invoice.invalidParameterOption = "You did not enter a valid product parameter option.">
+<cfset Variables.wslang_invoice.parameterRequired = "You did not enter a required product parameter.">
+<cfset Variables.wslang_invoice.insertInvoice = "You do not have permission to create invoices.">
+<cfset Variables.wslang_invoice.insertInvoiceLineItem = "You do not have permission to insert line items.">
+<cfset Variables.wslang_invoice.openInvoices = "This customer has more than one open invoice. We are not inclined to choose for you.">
+<cfset Variables.wslang_invoice.invoiceIsClosed = "The invoice you just created is already closed.">
+<cfset Variables.wslang_invoice.invalidInvoice = "You did not specify a valid invoice.">
+<cfset Variables.wslang_invoice.viewInvoice = "You do not have permission to view invoices.">
+<cfset Variables.wslang_invoice.viewInvoiceLineItems = "You do not have permission to view invoice line items.">
+<cfset Variables.wslang_invoice.listInvoices = "You do not have permission to list invoices.">
+<cfset Variables.wslang_invoice.updateInvoice = "You do not have permission to update invoices.">
+<cfset Variables.wslang_invoice.exportInvoices = "You do not have permission to export invoices.">
+<cfset Variables.wslang_invoice.exportOption = "You did not specify a valid export option.">

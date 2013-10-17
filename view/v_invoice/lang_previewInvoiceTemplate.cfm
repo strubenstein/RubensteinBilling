@@ -1,0 +1,31 @@
+<cfset Variables.lang_previewInvoiceTemplate_title = StructNew()>
+
+<cfset Variables.lang_previewInvoiceTemplate_title.invoiceInstructions = "These are the custom instructions for this invoice.">
+<cfset Variables.lang_previewInvoiceTemplate_title.addressName = "Corporate Headquarters">
+<cfset Variables.lang_previewInvoiceTemplate_title.address = "19800 Reisterstown Road">
+<cfset Variables.lang_previewInvoiceTemplate_title.address2 = "Suite 666">
+<cfset Variables.lang_previewInvoiceTemplate_title.city = "Baltimore">
+<cfset Variables.lang_previewInvoiceTemplate_title.state = "MD">
+<cfset Variables.lang_previewInvoiceTemplate_title.zipCode = "12345">
+<cfset Variables.lang_previewInvoiceTemplate_title.zipCodePlus4 = "6789">
+<cfset Variables.lang_previewInvoiceTemplate_title.companyName = "Your Customer, Inc.">
+<cfset Variables.lang_previewInvoiceTemplate_title.companyDBA = "Your Customer DBA">
+<cfset Variables.lang_previewInvoiceTemplate_title.companyID_custom = "987665442">
+<cfset Variables.lang_previewInvoiceTemplate_title.username = "tUsername">
+<cfset Variables.lang_previewInvoiceTemplate_title.firstName = "Joe">
+<cfset Variables.lang_previewInvoiceTemplate_title.lastName = "Customer">
+<cfset Variables.lang_previewInvoiceTemplate_title.email = "joe.customer@client.com">
+<cfset Variables.lang_previewInvoiceTemplate_title.userID_custom = "35539185">
+<cfset Variables.lang_previewInvoiceTemplate_title.jobTitle = "VP, Invoice Samples">
+<cfset Variables.lang_previewInvoiceTemplate_title.subscriberName = "Joe Customer Subscriber">
+<cfset Variables.lang_previewInvoiceTemplate_title.subscriberID_custom = "3693901">
+<cfset Variables.lang_previewInvoiceTemplate_title.paymentMethod = "credit card">
+<cfset Variables.lang_previewInvoiceTemplate_title.paymentCreditName = "Sample Credit">
+<cfset Variables.lang_previewInvoiceTemplate_title.invoicePaymentCreditText = "Sample Credit">
+<cfset Variables.lang_previewInvoiceTemplate_title.paymentCreditID_custom = "359386">
+<cfset Variables.lang_previewInvoiceTemplate_title.creditCardName = "Joe Client">
+<cfset Variables.lang_previewInvoiceTemplate_title.creditCardNumber = "4123456789012345">
+<cfset Variables.lang_previewInvoiceTemplate_title.creditCardType = "Visa">
+<cfset Variables.lang_previewInvoiceTemplate_title.creditCardExpirationMonth = "06">
+<cfset Variables.lang_previewInvoiceTemplate_title.creditCardExpirationYear = "2010">
+

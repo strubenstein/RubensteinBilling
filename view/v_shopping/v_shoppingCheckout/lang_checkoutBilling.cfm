@@ -1,0 +1,45 @@
+<cfset Variables.lang_checkoutBilling = StructNew()>
+
+<cfset Variables.lang_checkoutBilling.addressID = "You did not select a valid existing address.">
+<cfset Variables.lang_checkoutBilling.addressName_blank = "Please enter a contact name for this address.">
+<cfset Variables.lang_checkoutBilling.addressName_maxlength = "The contact name may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.addressName_unique = "The address name is already being used by another address. Please select a different name.">
+<cfset Variables.lang_checkoutBilling.address_blank = "The street address cannot be blank.">
+<cfset Variables.lang_checkoutBilling.address_maxlength = "The street address may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.address2 = "The 2nd street address line name may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.city_blank = "The city cannot be blank.">
+<cfset Variables.lang_checkoutBilling.city_maxlength = "The state may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.state_maxlength = "The state may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.state_blank = "The state cannot be blank.">
+<cfset Variables.lang_checkoutBilling.state_valid = "You did not enter a valid state.">
+<cfset Variables.lang_checkoutBilling.zipCode_blank = "The zip/postal code cannot be blank.">
+<cfset Variables.lang_checkoutBilling.zipCode_maxlength = "The zip/postal code may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.zipCodePlus4 = "The zip code <i>plus 4</i> may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.country_maxlength = "The country may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.country_blank = "The country cannot be blank.">
+<cfset Variables.lang_checkoutBilling.country_valid = "You did not select a valid country.">
+
+<cfset Variables.lang_checkoutBilling.creditCardName_blank = "The name on the credit card is required.">
+<cfset Variables.lang_checkoutBilling.creditCardName_maxlength = "The name on the credit card may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.creditCardType_blank = "You did not select a credit card type.">
+<cfset Variables.lang_checkoutBilling.creditCardType_valid = "You did not select a valid credit card type.">
+<cfset Variables.lang_checkoutBilling.creditCardNumber_blank = "The credit card number is required.">
+<cfset Variables.lang_checkoutBilling.creditCardNumber_valid = "You did not enter a valid credit card number.">
+<cfset Variables.lang_checkoutBilling.creditCardNumber_type = "The credit card number you entered does not match the credit card type you selected.">
+<cfset Variables.lang_checkoutBilling.creditCardExpirationMonth_blank = "You must select the month your credit card expires.">
+<cfset Variables.lang_checkoutBilling.creditCardExpirationMonth_valid = "You did not select a valid month for when your credit card expires.">
+<cfset Variables.lang_checkoutBilling.creditCardExpirationMonth_maxlength = "The month your credit card expires may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.creditCardExpirationYear_blank = "You must select the year your credit card expires.">
+<cfset Variables.lang_checkoutBilling.creditCardExpirationYear_valid = "You did not select a valid year for when your credit card expires.">
+<cfset Variables.lang_checkoutBilling.creditCardExpirationYear_maxlength = "The year your credit card expires may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.creditCardExpiration_expired = "The month/year combination you entered for your credit card expiration date suggests the card has already expired.">
+<cfset Variables.lang_checkoutBilling.creditCardExpiration_expiredSaved = "The credit card you selected has already expired. Please enter new billing information.">
+<cfset Variables.lang_checkoutBilling.creditCardCVC_blank = "You did not enter the 3-4 digit code on the back of your credit card.">
+<cfset Variables.lang_checkoutBilling.creditCardCVC_valid = "You did not enter a valid number for the 3-4 digit code on the back of your credit card.">
+<cfset Variables.lang_checkoutBilling.creditCardCVC_maxlength = "The code on the back of your credit card may have a maximum of <<MAXLENGTH>> characters. It currently has <<LEN>> characters.">
+<cfset Variables.lang_checkoutBilling.creditCardRetain = "You did not select a valid option for whether to retain your credit card information for future purchases.">
+
+<cfset Variables.lang_checkoutBilling.errorTitle_insert = "The billing information could not be used for the following reason(s):">
+<cfset Variables.lang_checkoutBilling.errorTitle_update = "The billing information could not be updated for the following reason(s):">
+<cfset Variables.lang_checkoutBilling.errorHeader = "">
+<cfset Variables.lang_checkoutBilling.errorFooter = "">
